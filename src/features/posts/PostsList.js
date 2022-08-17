@@ -22,6 +22,7 @@ export default function PostsList() {
     //   <PostsExcerpt key={post.id} post={post} />
     // ));
 
+    // Since we do the sorting in the createEntityAdapter inside the postsSlice.js, we don't need to sort here and can use the orderedPostIds array to map over the posts:
     renderedPosts = orderedPostIds.map((postId) => (
       <PostsExcerpt key={postId} postId={postId} />
     ));

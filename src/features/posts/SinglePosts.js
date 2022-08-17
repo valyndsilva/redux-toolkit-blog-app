@@ -5,8 +5,11 @@ import ReactionButtons from './ReactionButtons';
 import { useSelector } from 'react-redux';
 import { selectPostById } from './postsSlice';
 import { useParams, Link } from 'react-router-dom';
+
 export default function SinglePosts() {
+  
   const { postId } = useParams(); // pulls postId from the url
+
   //retrieve postId
   const post = useSelector((state) => selectPostById(state, Number(postId)));
   if (!post) {

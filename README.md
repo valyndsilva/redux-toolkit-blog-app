@@ -1,4 +1,6 @@
-# React Redux Blog App with CRUD Examples:
+# React Redux Blog App:
+
+React Redux Blog App with CRUD Examples, Performance Techniques and Optimizations using createEntityAdapter, getSelectors, memoizing etc.
 
 ## Commands used in Terminal:
 
